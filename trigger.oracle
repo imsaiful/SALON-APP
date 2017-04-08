@@ -1,0 +1,9 @@
+//trigger code to maintain the back up table for vip customre
+CREATE  OR REPLACE TRIGGER VIP
+AFTER INSERT  ON SHOP 
+FOR EACH ROW
+BEGIN 
+IF inserting AND :NEW.TOTAL>=500 then 
+INSERT INTO VIP_BACKUP(NAME, MOB, EDATE) VALUES (:NEW.NAME, :NEW.MOB,SYSDATE);
+END IF;
+END;
