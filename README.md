@@ -1,0 +1,2 @@
+# SALON-APP
+salon application in java swing where the employees as well as the owner can use the application to calculate the total and generate the slip. In this application i am maintaining the database of the every customer using oracle server so that we can approach them after certain time to visit the salon again.In addition we are also taking the back up of all the customer as a VIP customer whose total is greater than 500.These are valuable customer so we treat them best. 
